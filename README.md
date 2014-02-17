@@ -1,6 +1,10 @@
-# Warning: not tested... yet.
+# Before running
 
-Threw this post-install together based on the post-install I use for my workstation. I cut out a bit so I could share it, so I need to test this script from a fresh install.
+Make sure you run Software Updater to make sure you have installed the latest updates.
+
+# Tested on fresh install of Ubuntu 13.10
+
+I have confirmed that this works on a fresh install of Ubuntu 13.10 (my OS of choice).
 
 # Configuration
 
