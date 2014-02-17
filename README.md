@@ -56,7 +56,7 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 * [Google Chrome](https://www.google.com/chrome/)
 * [Meld](http://meldmerge.org/)
 * [Node.js](http://nodejs.org/) + [NPM](https://www.npmjs.org/)
-* [Oracle Java](www.oracle.com/us/technologies/java/)
+* [Oracle Java](http://www.oracle.com/us/technologies/java/)
 * [ReText](http://sourceforge.net/projects/retext/)
 * [Shutter](https://apps.ubuntu.com/cat/applications/shutter/)
 * [Sublime Text 2](http://www.sublimetext.com/)
