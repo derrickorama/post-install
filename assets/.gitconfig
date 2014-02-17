@@ -1,6 +1,7 @@
 [alias]
-	df = difftool
 	all = !git add -A . && git commit
+	ci = commit
+	df = difftool
 	stat = status
 [diff]
 	external = meld

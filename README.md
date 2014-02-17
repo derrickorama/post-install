@@ -1,7 +1,3 @@
-# Before running
-
-Make sure you run Software Updater to make sure you have installed the latest updates.
-
 # Tested on fresh install of Ubuntu 13.10
 
 I have confirmed that this works on a fresh install of Ubuntu 13.10 (my OS of choice).
@@ -28,8 +24,9 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
     * Also installs [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * **.gitconfig**
     * aliases
-        * df = difftool
         * all = !git add -A . && git commit
+        * ci = commit
+        * df = difftool
         * stat = status
     * diff tool
         * external = meld
