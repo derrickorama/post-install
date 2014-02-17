@@ -25,15 +25,12 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 * Enable all icons in system tray (systray-whitelist)
 * Changes to Radiance theme
 * Changes default shell to zsh
-    * Also installs oh-my-zsh
+    * Also installs [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * **.gitconfig**
     * aliases
         * df = difftool
         * all = !git add -A . && git commit
         * stat = status
-    * user config
-        * email = derrickorama@gmail.com
-        * name = Derrick Gall
     * diff tool
         * external = meld
 * **Adds to startup**
@@ -52,29 +49,29 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 
 ## Application Installs
 
-* CompizConfig Settings Manager
-* curl
-* Dropbox
-* Git
-* Google Chrome
-* Meld
-* Node.js + NPM
-* Oracle Java
-* ReText
-* Shutter
-* Sublime Text 2
-* Synapse
-* Ubuntu Tweak
-* unrar
-* Virtual Box
+* [CompizConfig Settings Manager](https://apps.ubuntu.com/cat/applications/compizconfig-settings-manager/)
+* [curl](http://curl.haxx.se/)
+* [Dropbox](https://www.dropbox.com/)
+* [Git](http://git-scm.com/)
+* [Google Chrome](https://www.google.com/chrome/)
+* [Meld](http://meldmerge.org/)
+* [Node.js](http://nodejs.org/) + [NPM](https://www.npmjs.org/)
+* [Oracle Java](www.oracle.com/us/technologies/java/)
+* [ReText](http://sourceforge.net/projects/retext/)
+* [Shutter](https://apps.ubuntu.com/cat/applications/shutter/)
+* [Sublime Text 2](http://www.sublimetext.com/)
+* [Synapse](https://apps.ubuntu.com/cat/applications/synapse/)
+* [Ubuntu Tweak](http://ubuntu-tweak.com/)
+* [unrar](http://www.rarlab.com/rar_add.htm)
+* [Virtual Box](https://www.virtualbox.org/)
 
 ### Node modules
 
-* grunt-init + grunt-init-gruntfile
-* jshint
-* jasmine-node
-* karma
+* [grunt-init](http://gruntjs.com/project-scaffolding) + [grunt-init-gruntfile](https://github.com/gruntjs/grunt-init-gruntfile)
+* [jshint](http://www.jshint.com/docs/)
+* [jasmine-node](https://github.com/mhevery/jasmine-node)
+* [karma](http://karma-runner.github.io/)
 
 ## Post-application setup
 
-* Installs IE11 VM
+* Installs IE11 VM (from [modern.ie](http://modern.ie/virtualization-tools))

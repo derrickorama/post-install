@@ -2,8 +2,5 @@
 	df = difftool
 	all = !git add -A . && git commit
 	stat = status
-[user]
-	email = derrickorama@gmail.com
-	name = Derrick Gall
 [diff]
 	external = meld
