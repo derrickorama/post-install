@@ -6,16 +6,47 @@ Make sure you run Software Updater to make sure you have installed the latest up
 
 I have confirmed that this works on a fresh install of Ubuntu 13.10 (my OS of choice).
 
-# Configuration
+# What this does
+
+I have documented the gist of what this script does (it's not too complicated... yet). For a detailed explanation, look through the script yourself.
+
+## Configuration
 
 * Enable workspaces (4x4)
 * Enable all icons in system tray (systray-whitelist)
 * Changes to Radiance theme
+* Changes default shell to zsh
+    * Also installs oh-my-zsh
+* **.gitconfig**
+    * aliases
+        * df = difftool
+        * all = !git add -A . && git commit
+        * stat = status
+    * user config
+        * email = derrickorama@gmail.com
+        * name = Derrick Gall
+    * diff tool
+        * external = meld
+* **Adds to startup**
+    * Dropbox
+    * Synapse
+* **Sets up icons in launcher**
+    * Nautilus
+    * Chrome
+    * Firefox
+    * Terminal
+    * Sublime Text 2
+    * VirtualBox
+    * Running apps (standard)
+    * Expo Icon (standard)
+    * Devices (standard)
 
-# Application Installs
+## Application Installs
 
+* CompizConfig Settings Manager
 * Dropbox
 * Git
+* Google Chrome
 * Meld
 * Node.js + NPM
 * Oracle Java
@@ -27,38 +58,13 @@ I have confirmed that this works on a fresh install of Ubuntu 13.10 (my OS of ch
 * unrar
 * Virtual Box
 
-## Node modules
+### Node modules
 
 * grunt-init + grunt-init-gruntfile
 * jshint
 * jasmine-node
 * karma
 
-# Post-application setup
+## Post-application setup
 
-* Sets up icons in launcher
-    * Nautilus
-    * Chrome
-    * Firefox
-    * Terminal
-    * Sublime Text 2
-    * VirtualBox
-    * Running apps (standard)
-    * Expo Icon (standard)
-    * Devices (standard)
-* Copies .gitconfig file
-    * aliases
-        * df = difftool
-        * all = !git add -A . && git commit
-        * stat = status
-    * user config
-        * email = derrickorama@gmail.com
-        * name = Derrick Gall
-    * diff tool
-        * external = meld
-* Adds to startup
-    * Dropbox
-    * Synapse
-* Changes shell to zsh
-    * Installs oh-my-zsh
 * Installs IE11 VM
