@@ -57,7 +57,8 @@ sudo apt-get update
 # - ReText
 # - unrar
 # - CompizConfig Settings Manager
-sudo apt-get install -y dropbox ubuntu-tweak sublime-text meld virtualbox-4.3 synapse git zsh oracle-java8-installer oracle-java7-set-default icedtea-7-plugin npm shutter retext unrar compizconfig-settings-manager
+# - curl
+sudo apt-get install -y dropbox ubuntu-tweak sublime-text meld virtualbox-4.3 synapse git zsh oracle-java8-installer oracle-java7-set-default icedtea-7-plugin npm shutter retext unrar compizconfig-settings-manager curl
 
 # Run upgrade (to install changes from the mc3man PPA
 sudo apt-get upgrade -y
@@ -98,10 +99,10 @@ cp /usr/share/applications/synapse.desktop ~/.config/autostart
 sudo chsh -s /bin/zsh $USER
 
 # Copy ZSH configuration
-cp $DIR/assets/.zshrc
+cp $DIR/assets/.zshrc ~/.zshrc
 
 # Install oh-my-zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+/bin/zsh -s 'curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh'
 
 # Enable Java in Chrome
 #  - Not sure that I need this
