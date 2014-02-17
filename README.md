@@ -6,7 +6,7 @@ Make sure you run Software Updater to make sure you have installed the latest up
 
 I have confirmed that this works on a fresh install of Ubuntu 13.10 (my OS of choice).
 
-## This assumes
+**This assumes**
 
 * You chose to download all updates during Ubuntu installation
 * You chose to install 3rd party software during Ubuntu installation
