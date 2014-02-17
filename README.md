@@ -11,13 +11,13 @@ I have confirmed that this works on a fresh install of Ubuntu 13.10 (my OS of ch
 * You chose to download all updates during Ubuntu installation
 * You chose to install 3rd party software during Ubuntu installation
 
-# After running this
-
-You'll have to finish the Dropbox setup manually and then restart the machine.
-
 # What this does
 
 I have documented the gist of what this script does (it's not too complicated... yet). For a detailed explanation, look through the script yourself.
+
+**After running this**
+
+You'll have to finish the Dropbox setup manually and then restart the machine.
 
 ## Configuration
 
