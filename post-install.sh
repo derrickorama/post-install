@@ -13,9 +13,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 2
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 2
 
-# Change theme to Radiance
-gsettings set org.gnome.desktop.interface gtk-theme "Radiance"
-gsettings set org.gnome.desktop.wm.preferences theme "Radiance"
+# Update icon theme
 gsettings set org.gnome.desktop.interface icon-theme "ubuntu-mono-light"
 
 
@@ -28,6 +26,7 @@ sudo add-apt-repository -y ppa:mc3man/systray-white # systray-whitelist fix
 sudo add-apt-repository -y ppa:tualatrix/ppa # Ubuntu Tweak
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2 # Sublime Text 2
 sudo add-apt-repository -y ppa:webupd8team/java # Oracle Java
+sudo add-apt-repository -y ppa:noobslab/themes # Flatts theme
 # Dropbox
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 sudo add-apt-repository "deb http://linux.dropbox.com/ubuntu $(lsb_release -sc) main"
@@ -58,9 +57,10 @@ sudo apt-get update
 # - unrar
 # - CompizConfig Settings Manager
 # - curl
-sudo apt-get install -y dropbox ubuntu-tweak sublime-text meld virtualbox-4.3 synapse git zsh oracle-java8-installer oracle-java7-set-default icedtea-7-plugin npm shutter retext unrar compizconfig-settings-manager curl
+# - Flatts theme
+sudo apt-get install -y dropbox ubuntu-tweak sublime-text meld virtualbox-4.3 synapse git zsh oracle-java8-installer oracle-java7-set-default icedtea-7-plugin npm shutter retext unrar compizconfig-settings-manager curl flatts-theme
 
-# Run upgrade (to install changes from the mc3man PPA
+# Run upgrade (to install changes from the mc3man PPA)
 sudo apt-get upgrade -y
 
 # Alias nodejs as node
@@ -81,6 +81,10 @@ rm google-chrome-stable_current_amd64.deb
 ############################
 # After apps are installed #
 ############################
+
+# Set theme to Flatts-Blue
+gsettings set org.gnome.desktop.interface gtk-theme "Flatts-Blue"
+gsettings set org.gnome.desktop.wm.preferences theme "Flatts-Blue"
 
 # Whitelist system tray icons
 gsettings set com.canonical.Unity.Panel systray-whitelist "['all']"
