@@ -19,7 +19,7 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 
 * Enable workspaces (4x4)
 * Enable all icons in system tray (systray-whitelist)
-* Changes to Radiance theme
+* Changes to [Flatts theme](http://www.noobslab.com/2014/03/new-flatts-theme-suite-offer-three.html)
 * Changes default shell to zsh
     * Also installs [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * **.gitconfig**
