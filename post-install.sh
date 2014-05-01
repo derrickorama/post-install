@@ -13,8 +13,17 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 2
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 2
 
-# Update icon theme
-gsettings set org.gnome.desktop.interface icon-theme "ubuntu-mono-light"
+# Install Faenza icons (PPA not working)
+mkdir tmp
+mkdir -p ~/.icons
+wget http://faenza-icon-theme.googlecode.com/files/faenza-icon-theme_1.3.zip -O tmp/faenza.zip
+unzip tmp/faenza.zip -d tmp/faenza
+cp -r tmp/faenza/Faenza ~/.icons/Faenza
+rm -rf tmp
+gsettings set org.gnome.desktop.interface icon-theme 'Faenza'
+
+# Enable Progress Fancy in Apt
+echo 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
 
 
 ########################
