@@ -1,11 +1,6 @@
-# Tested on fresh install of Ubuntu 13.10
+# Tested on fresh install of Ubuntu 14.04
 
-I have confirmed that this works on a fresh install of Ubuntu 13.10 (my OS of choice).
-
-**This assumes**
-
-* You chose to download all updates during Ubuntu installation
-* You chose to install 3rd party software during Ubuntu installation
+I have confirmed that this works on a fresh install of Ubuntu 14.04 (my OS of choice).
 
 # What this does
 
@@ -34,7 +29,6 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
         * external = meld
 * **Adds to startup**
     * Dropbox
-    * Synapse
 * **Sets up icons in launcher**
     * Nautilus
     * Chrome
@@ -59,7 +53,6 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 * [ReText](http://sourceforge.net/projects/retext/)
 * [Shutter](https://apps.ubuntu.com/cat/applications/shutter/)
 * [Sublime Text 2](http://www.sublimetext.com/)
-* [Synapse](https://apps.ubuntu.com/cat/applications/synapse/)
 * [Ubuntu Tweak](http://ubuntu-tweak.com/)
 * [unrar](http://www.rarlab.com/rar_add.htm)
 * [Virtual Box](https://www.virtualbox.org/)
@@ -70,7 +63,3 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 * [jshint](http://www.jshint.com/docs/)
 * [jasmine-node](https://github.com/mhevery/jasmine-node)
 * [karma](http://karma-runner.github.io/)
-
-## Post-application setup
-
-* Installs IE11 VM (from [modern.ie](http://modern.ie/virtualization-tools))
