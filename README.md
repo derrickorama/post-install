@@ -20,7 +20,6 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 ## Configuration
 
 * Enable workspaces (4x4)
-* Enable all icons in system tray (systray-whitelist)
 * Installs Faenza icons
 * Enabled "Progress Fancy" in Apt
 * Changes to [Flatts theme](http://www.noobslab.com/2014/03/new-flatts-theme-suite-offer-three.html)
@@ -42,7 +41,6 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
     * Firefox
     * Terminal
     * Sublime Text 2
-    * VirtualBox
     * Running apps (standard)
     * Expo Icon (standard)
     * Devices (standard)
@@ -62,7 +60,6 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 * [Sublime Text 2](http://www.sublimetext.com/)
 * [Ubuntu Tweak](http://ubuntu-tweak.com/)
 * [unrar](http://www.rarlab.com/rar_add.htm)
-* [Virtual Box](https://www.virtualbox.org/)
 * [Adobe Flash](http://get.adobe.com/flashplayer/)
 
 ### Node modules

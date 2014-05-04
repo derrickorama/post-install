@@ -60,7 +60,6 @@ sudo apt-get update > /dev/null
 # - Ubuntu Tweak
 # - Sublime Text 2
 # - Meld
-# - VirtualBox
 # - Synapse
 # - Git
 # - Oracle Java
