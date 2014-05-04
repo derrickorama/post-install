@@ -2,6 +2,13 @@
 
 I have confirmed that this works on a fresh install of Ubuntu 14.04 (my OS of choice).
 
+# How to run
+
+1. Install Ubuntu 14.04
+2. Navigate to this repo on Github and hit the "Download ZIP" button on the right
+3. Extract the contents to a folder
+4. Open your terminal and run the `post-install.sh` binary
+
 # What this does
 
 I have documented the gist of what this script does (it's not too complicated... yet). For a detailed explanation, look through the script yourself.

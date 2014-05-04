@@ -45,6 +45,9 @@ sudo add-apt-repository -y ppa:webupd8team/java > /dev/null 2>&1 # Oracle Java
 echo -e "${GREEN} * Oracle Java${GREENEND}"
 sudo add-apt-repository -y ppa:noobslab/themes > /dev/null 2>&1 # Flatts theme
 echo -e "${GREEN} * Flatts Theme${GREENEND}"
+# Dropbox
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
+sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ trusty main" >> /etc/apt/sources.list.d/dropbox.list'
 
 # Set up Oracle Java Installer to auto-agree to the terms
 echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
@@ -76,21 +79,21 @@ echo -e "${GREEN}* Applications installed:${GREENEND}"
 echo -e "${GREEN} * Dropbox${GREENEND}"
 sudo apt-get install -y ubuntu-tweak > /dev/null
 echo -e "${GREEN} * Ubuntu Tweak${GREENEND}"
-sudo apt-get install -y sublime-text > /dev/null
+sudo apt-get install -y sublime-text > /dev/null 2>&1
 echo -e "${GREEN} * Sublime Text 2${GREENEND}"
 sudo apt-get install -y meld > /dev/null
 echo -e "${GREEN} * Meld${GREENEND}"
 sudo apt-get install -y git > /dev/null
 echo -e "${GREEN} * Git${GREENEND}"
-sudo apt-get install -y zsh > /dev/null
+sudo apt-get install -y zsh > /dev/null 2>&1
 echo -e "${GREEN} * ZSH${GREENEND}"
-sudo apt-get install -y oracle-java8-installer > /dev/null
-sudo apt-get install -y oracle-java8-set-default > /dev/null
-sudo apt-get install -y icedtea-7-plugin > /dev/null
+sudo apt-get install -y oracle-java8-installer > /dev/null 2>&1
+sudo apt-get install -y oracle-java8-set-default > /dev/null 2>&1
+sudo apt-get install -y icedtea-7-plugin > /dev/null 2>&1
 echo -e "${GREEN} * Oracle Java${GREENEND}"
-sudo apt-get install -y npm > /dev/null
+sudo apt-get install -y npm > /dev/null 2>&1
 echo -e "${GREEN} * NPM${GREENEND}"
-sudo apt-get install -y shutter > /dev/null
+sudo apt-get install -y shutter > /dev/null 2>&1
 echo -e "${GREEN} * Shutter${GREENEND}"
 sudo apt-get install -y retext > /dev/null
 echo -e "${GREEN} * ReText${GREENEND}"
@@ -160,7 +163,7 @@ cp $DIR/assets/.zshrc ~/.zshrc
 echo -e "${GREEN}* Added ZSH config${GREENEND}"
 
 # Install oh-my-zsh
-curl --silent -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh > /dev/null
+curl --silent -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh > /dev/null 2>&1
 echo -e "${GREEN}* Installed oh-my-zsh${GREENEND}"
 
 # Change default shell to ZSH
