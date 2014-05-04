@@ -51,7 +51,6 @@ echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-
 echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
 
 # Update packages
-echo "Running apt-get update..."
 sudo apt-get update > /dev/null
 
 # Install
@@ -122,11 +121,11 @@ sudo npm install -g  --silent karma > /dev/null
 echo -e "${GREEN} * Karma${GREENEND}"
 
 # Install grunt-init-gruntfile
-if [ ! -f~/.grunt-init/gruntfile ]
+if [ ! -f ~/.grunt-init/gruntfile ]
 	then
 		rm -rf ~/.grunt-init/gruntfile
 fi
-git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
+git clone -q https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
 echo -e "${GREEN}* Installed grunt-init-gruntfile${GREENEND}"
 
 # Install the latest/stable version of Google Chrome
