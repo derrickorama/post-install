@@ -46,7 +46,7 @@ echo -e "${GREEN} * Oracle Java${GREENEND}"
 sudo add-apt-repository -y ppa:noobslab/themes > /dev/null 2>&1 # Flatts theme
 echo -e "${GREEN} * Flatts Theme${GREENEND}"
 # Dropbox
-sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E > /dev/null 2>&1
 sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ trusty main" >> /etc/apt/sources.list.d/dropbox.list'
 
 # Set up Oracle Java Installer to auto-agree to the terms
