@@ -18,7 +18,7 @@ mkdir tmp
 mkdir -p ~/.icons
 wget http://faenza-icon-theme.googlecode.com/files/faenza-icon-theme_1.3.zip -O tmp/faenza.zip
 unzip tmp/faenza.zip -d tmp/faenza
-cp -r tmp/faenza/Faenza ~/.icons/Faenza
+tar zxvf tmp/faenza/Faenza.tar.gz -C ~/.icons
 rm -rf tmp
 gsettings set org.gnome.desktop.interface icon-theme 'Faenza'
 
@@ -67,7 +67,7 @@ sudo apt-get update
 # - CompizConfig Settings Manager
 # - curl
 # - Flatts theme
-sudo apt-get install -y dropbox ubuntu-tweak sublime-text meld virtualbox-4.3 synapse git zsh oracle-java8-installer oracle-java7-set-default icedtea-7-plugin npm shutter retext unrar compizconfig-settings-manager curl flatts-theme
+sudo apt-get install -y dropbox ubuntu-tweak sublime-text meld virtualbox-4.3 git zsh oracle-java8-installer oracle-java7-set-default icedtea-7-plugin npm shutter retext unrar compizconfig-settings-manager curl flatts-theme
 
 # Run upgrade (to install changes from the mc3man PPA)
 sudo apt-get upgrade -y
@@ -116,15 +116,3 @@ cp $DIR/assets/.zshrc ~/.zshrc
 
 # Install oh-my-zsh
 /bin/zsh -s 'curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh'
-
-# Enable Java in Chrome
-#  - Not sure that I need this
-# sudo mkdir -p /opt/google/chrome/plugins
-# sudo ln -s /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/IcedTeaPlugin.so /opt/google/chrome/plugins
-
-##
-# Last Step (takes a while)
-##
-
-# Install IE VMs
-(cd ~/Downloads && curl -O "https://az412801.vo.msecnd.net/vhd/VMBuild_20131127/VirtualBox/IE11_Win8.1/Linux/IE11.Win8.1.For.LinuxVirtualBox.part{1.sfx,2.rar,3.rar}" && unrar e IE11.Win8.1.For.LinuxVirtualBox.part1.sfx)
