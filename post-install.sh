@@ -31,7 +31,7 @@ echo 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
 ########################
 
 # Add repositories
-sudo add-apt-repository -y ppa:mc3man/systray-white # systray-whitelist fix
+sudo add-apt-repository -y ppa:timekiller/unity-systrayfix # systray whitelist fix
 sudo add-apt-repository -y ppa:tualatrix/ppa # Ubuntu Tweak
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2 # Sublime Text 2
 sudo add-apt-repository -y ppa:webupd8team/java # Oracle Java
@@ -107,7 +107,6 @@ cp $DIR/assets/.gitconfig ~/.gitconfig
 
 # Configure autostart
 cp /usr/share/applications/dropbox.desktop ~/.config/autostart
-cp /usr/share/applications/synapse.desktop ~/.config/autostart
 
 # Change default shell to ZSH
 sudo chsh -s /bin/zsh $USER
@@ -116,4 +115,4 @@ sudo chsh -s /bin/zsh $USER
 cp $DIR/assets/.zshrc ~/.zshrc
 
 # Install oh-my-zsh
-/bin/zsh -s 'curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh'
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
