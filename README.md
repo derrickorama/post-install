@@ -56,6 +56,7 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 * [Ubuntu Tweak](http://ubuntu-tweak.com/)
 * [unrar](http://www.rarlab.com/rar_add.htm)
 * [Virtual Box](https://www.virtualbox.org/)
+* [Adobe Flash](http://get.adobe.com/flashplayer/)
 
 ### Node modules
 

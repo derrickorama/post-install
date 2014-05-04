@@ -67,7 +67,8 @@ sudo apt-get update
 # - CompizConfig Settings Manager
 # - curl
 # - Flatts theme
-sudo apt-get install -y dropbox ubuntu-tweak sublime-text meld virtualbox-4.3 git zsh oracle-java8-installer oracle-java7-set-default icedtea-7-plugin npm shutter retext unrar compizconfig-settings-manager curl flatts-theme
+# - Flash (plugin)
+sudo apt-get install -y dropbox ubuntu-tweak sublime-text meld virtualbox-4.3 git zsh oracle-java8-installer oracle-java8-set-default icedtea-7-plugin npm shutter retext unrar compizconfig-settings-manager curl flatts-theme flashplugin-installer
 
 # Run upgrade (to install changes from the mc3man PPA)
 sudo apt-get upgrade -y
