@@ -107,7 +107,7 @@ echo -e "${GREEN} * Flatts theme${GREENEND}"
 sudo apt-get install -y flashplugin-installer > /dev/null
 echo -e "${GREEN} * Flash plugin${GREENEND}"
 sudo apt-get install -y pithos > /dev/null
-echo -e "${GREEN} * Flash plugin${GREENEND}"
+echo -e "${GREEN} * Pithos${GREENEND}"
 sudo apt-get install -y nautilus-open-terminal > /dev/null
 echo -e "${GREEN} * Nautilus - Open Terminal Here${GREENEND}"
 

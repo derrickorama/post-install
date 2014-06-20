@@ -61,6 +61,8 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 * [Ubuntu Tweak](http://ubuntu-tweak.com/)
 * [unrar](http://www.rarlab.com/rar_add.htm)
 * [Adobe Flash](http://get.adobe.com/flashplayer/)
+* [Pithos](http://pithos.github.io/)
+* [nautilus-open-terminal](https://launchpad.net/ubuntu/+source/nautilus-open-terminal)
 
 ### Node modules
 
