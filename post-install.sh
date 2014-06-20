@@ -106,6 +106,10 @@ sudo apt-get install -y flatts-theme > /dev/null
 echo -e "${GREEN} * Flatts theme${GREENEND}"
 sudo apt-get install -y flashplugin-installer > /dev/null
 echo -e "${GREEN} * Flash plugin${GREENEND}"
+sudo apt-get install -y pithos > /dev/null
+echo -e "${GREEN} * Flash plugin${GREENEND}"
+sudo apt-get install -y nautilus-open-terminal > /dev/null
+echo -e "${GREEN} * Nautilus - Open Terminal Here${GREENEND}"
 
 # Alias nodejs as node
 sudo ln -s /usr/bin/nodejs /usr/bin/node
