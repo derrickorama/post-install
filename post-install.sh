@@ -17,16 +17,6 @@ gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 2
 gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 2
 echo -e "${GREEN}* Workspaces enabled.${GREENEND}"
 
-# Install Faenza icons (PPA not working)
-mkdir tmp
-mkdir -p ~/.icons
-wget http://faenza-icon-theme.googlecode.com/files/faenza-icon-theme_1.3.zip --quiet -O tmp/faenza.zip
-unzip -qq tmp/faenza.zip -d tmp/faenza
-tar zxf tmp/faenza/Faenza.tar.gz -C ~/.icons
-rm -rf tmp
-gsettings set org.gnome.desktop.interface icon-theme 'Faenza'
-echo -e "${GREEN}* Faenza icons installed and enabled.${GREENEND}"
-
 # Enable Progress Fancy in Apt
 echo 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar > /dev/null
 echo -e "${GREEN}* Progress Fancy for Apt enabled.${GREENEND}"
@@ -43,8 +33,9 @@ sudo add-apt-repository -y ppa:webupd8team/sublime-text-2 > /dev/null 2>&1 # Sub
 echo -e "${GREEN} * Sublime Text 2${GREENEND}"
 sudo add-apt-repository -y ppa:webupd8team/java > /dev/null 2>&1 # Oracle Java
 echo -e "${GREEN} * Oracle Java${GREENEND}"
-sudo add-apt-repository -y ppa:noobslab/themes > /dev/null 2>&1 # Flatts theme
-echo -e "${GREEN} * Flatts Theme${GREENEND}"
+sudo add-apt-repository -y ppa:numix/ppa > /dev/null 2>&1 # Numix Icons
+echo -e "${GREEN} * Numix uTouch Icons${GREENEND}"
+
 # Dropbox
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E > /dev/null 2>&1
 sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ trusty main" >> /etc/apt/sources.list.d/dropbox.list'
@@ -71,8 +62,8 @@ sudo apt-get update > /dev/null
 # - unrar
 # - CompizConfig Settings Manager
 # - curl
-# - Flatts theme
 # - Flash (plugin)
+# - Numix icons
 sudo apt-get install -y dropbox > /dev/null
 echo -e "${GREEN}* Applications installed:${GREENEND}"
 echo -e "${GREEN} * Dropbox${GREENEND}"
@@ -102,14 +93,14 @@ sudo apt-get install -y compizconfig-settings-manager > /dev/null
 echo -e "${GREEN} * CompizConfig Settings Manager${GREENEND}"
 sudo apt-get install -y curl > /dev/null
 echo -e "${GREEN} * Curl${GREENEND}"
-sudo apt-get install -y flatts-theme > /dev/null
-echo -e "${GREEN} * Flatts theme${GREENEND}"
 sudo apt-get install -y flashplugin-installer > /dev/null
 echo -e "${GREEN} * Flash plugin${GREENEND}"
 sudo apt-get install -y pithos > /dev/null
 echo -e "${GREEN} * Flash plugin${GREENEND}"
 sudo apt-get install -y nautilus-open-terminal > /dev/null
 echo -e "${GREEN} * Nautilus - Open Terminal Here${GREENEND}"
+sudo apt-get install -y numix-icon-theme-utouch > /dev/null
+echo -e "${GREEN} * Numix icons${GREENEND}"
 
 # Alias nodejs as node
 sudo ln -s /usr/bin/nodejs /usr/bin/node
@@ -140,14 +131,26 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb > /dev/null
 rm google-chrome-stable_current_amd64.deb
 echo -e "${GREEN}* Installed Google Chrome (stable)${GREENEND}"
 
-############################
-# After apps are installed #
-############################
+# Install Zuki Themes
+git clone -q https://github.com/lassekongo83/zuki-themes.git ~/.themes/zuki-themes
+ln -s ~/.themes/zuki-themes/Zukiwi ~/.themes/Zukiwi
 
-# Set theme to Flatts-Blue
-gsettings set org.gnome.desktop.interface gtk-theme "Flatts-Blue"
-gsettings set org.gnome.desktop.wm.preferences theme "Flatts-Blue"
-echo -e "${GREEN}* Flatts theme enabled${GREENEND}"
+# Install oh-my-zsh
+curl --silent -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh > /dev/null 2>&1
+echo -e "${GREEN}* Installed oh-my-zsh${GREENEND}"
+
+########################
+# System Configuration #
+########################
+
+# Set icons to Numix
+gsettings set org.gnome.desktop.interface icon-theme 'Numix-uTouch'
+echo -e "${GREEN}* Numix icons enabled${GREENEND}"
+
+# Set theme to Zukiwi
+gsettings set org.gnome.desktop.interface gtk-theme "Zukiwi"
+gsettings set org.gnome.desktop.wm.preferences theme "Zukiwi"
+echo -e "${GREEN}* Zukiwi theme enabled${GREENEND}"
 
 # Set up launcher
 gsettings set com.canonical.Unity.Launcher favorites "['application://nautilus.desktop', 'application://google-chrome.desktop', 'application://firefox.desktop', 'application://gnome-terminal.desktop', 'application://sublime-text-2.desktop', 'application://virtualbox.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']"
@@ -164,10 +167,6 @@ echo -e "${GREEN}* Dropbox set to autostart${GREENEND}"
 # Copy ZSH configuration
 cp $DIR/assets/.zshrc ~/.zshrc
 echo -e "${GREEN}* Added ZSH config${GREENEND}"
-
-# Install oh-my-zsh
-curl --silent -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh > /dev/null 2>&1
-echo -e "${GREEN}* Installed oh-my-zsh${GREENEND}"
 
 # Change default shell to ZSH
 sudo chsh -s /bin/zsh $USER

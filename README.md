@@ -19,12 +19,13 @@ You'll have to finish the Dropbox setup manually and then restart the machine.
 
 ## Configuration
 
-* Enable workspaces (4x4)
-* Installs Faenza icons
-* Enabled "Progress Fancy" in Apt
-* Changes to [Flatts theme](http://www.noobslab.com/2014/03/new-flatts-theme-suite-offer-three.html)
+* [Numix uTouch](https://github.com/numixproject/numix-icon-theme-utouch) icons
+* [Zukiwi](https://github.com/lassekongo83/zuki-themes) theme
 * Changes default shell to zsh
     * Also installs [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+* Enable workspaces (4x4)
+* Enabled "Progress Fancy" in Apt
+
 * **.gitconfig**
     * aliases
         * all = !git add -A . && git commit
